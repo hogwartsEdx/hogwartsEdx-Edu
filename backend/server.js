@@ -132,7 +132,9 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/posts', postRoutes);
 app.use('/api/auth', authRoutes); // Use authRoutes for authentication
 app.use('/api/certificates', certificateRoutes); // Use certificateRoutes for certificates
-
+app.get('/', (req, res) => {
+  res.send('Welcome to My API');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
