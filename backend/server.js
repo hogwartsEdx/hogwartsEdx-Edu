@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 const allowedOrigins = [
-  'https://eduxcel.vercel.app',
+  'https://hogwartsedx.vercel.app/',
   'http://localhost:5173',
   
 
