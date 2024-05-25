@@ -166,7 +166,7 @@ const generateCertificatePDF = (user, category) => {
 
                 doc.fontSize(14).font('HarryP').fillColor('#000000').text(`Verify certificate: /${uniqueId}`, {
                     align: 'center',
-                    link: `http://localhost:5173/verify/${uniqueId}`,
+                    link: `https://hogwartsedx.vercel.app/verify/${uniqueId}`,
 
                     continued: true
                 }).moveTo(verifyLinkX, verifyLinkY).text('.', {
@@ -231,7 +231,7 @@ router.put('/complete/:postId', auth, async (req, res) => {
                         <p style="font-size: 16px; color: #333; text-align: center;">Please find your certificate of completion attached to this email.</p>
                     </section>
                     <footer style="text-align: center; margin-top: 20px;">
-                        <p style="font-size: 14px; color: #777;">Thank you for being a part of EduXcel!</p>
+                        <p style="font-size: 14px; color: #777;">Thank you for being a part of HogwartsEdx !</p>
                         <p style="font-size: 14px; color: #777;">For any queries, contact us at <a href="mailto:support@eduxcel.com">support@eduxcel.com</a></p>
                     </footer>
                 </div>
