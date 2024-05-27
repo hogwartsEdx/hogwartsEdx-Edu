@@ -19,7 +19,9 @@ const userSchema = new mongoose.Schema({
         default: 'user',
         enum: ['user', 'admin']
     },
-    resetPasswordToken: String, 
+    resetPasswordToken: String,
+    followedCategories: [{ type: String }],
+ 
     resetPasswordExpires: Date,
     date: {
         type: Date,
